@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider e-comerce</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<body>
+
+  <header class="container-menu">
+    <div class="menu">
+      <div>
+        <a id="logo" href="#inicio" title="Home (Inicio)">
+          <img id="umaru" src="./imagenes/logo.PNG">
+          <span class="title-logo bg-orange">NEA STORE</span>
+        </a>
+      </div>
+      <div>
+        <input type="checkbox" id="switch-menu">
+        <nav class="menu-items">
+          <a href="#genero" class="Genero">Genero</a>
+          <a href="#tipo-de-prenda">Tipo de prenda</a>
+          <a href="#closet">Closet</a>
+          <a href="#arma-tu-outfit">Armá tu outfit</a>
+          <a href="./pages/contactanos.html">Contáctanos</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <p id="total">Total de tu compra es: $
+    <span id="valorTotal">
+      0
+    </span>
+  </p>
+
+  <main>
+    <div class="container">
+
+
+      <input type="radio" name="slider" class="d-none" id="s1" checked>
+      <input type="radio" name="slider" class="d-none" id="s2">
+      <input type="radio" name="slider" class="d-none" id="s3">
+      <input type="radio" name="slider" class="d-none" id="s4">
+      <input type="radio" name="slider" class="d-none" id="s5">
+
+      <div class="cards" id="producto-contenedor">
+
+      </div>
+
+    </div>
+  </main>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="App.js"></script>
+  <script src="car.js"></script>
+</body>
+
+</html>
