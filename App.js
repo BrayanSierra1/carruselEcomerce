@@ -31,7 +31,7 @@ const paintSlides = async () => {
           </div>
           <button type="button" class="btn-contact btn-add" data-id="${producto.id}">Agregar</button>
           <div class="socials">
-            <div class="counter-container">
+            <div class="counter-container" data-toggle="modal" data-target="#exampleModal">
               <span class="counter">0</span><i class="fa-solid fa-cart-shopping"></i>
             </div>
             <i class="fa-regular fa-heart"></i>
